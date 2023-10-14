@@ -4,12 +4,13 @@
 
 // I AM NOT DONE
 
-struct Wrapper {
-    value: u32,
+struct Wrapper<T> { // add generic type
+    value: T, // change to generic type
 }
 
-impl Wrapper {
-    pub fn new(value: u32) -> Self {
+
+impl <T> Wrapper <T>{ // add generic type
+    pub fn new(value: T) -> Self {//change to generic type
         Wrapper { value }
     }
 }
